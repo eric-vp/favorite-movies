@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Filmes</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="/" class="cabecalho__icone">
+            <i class="fa-solid fa-clapperboard"></i>
+        </a>
+        <h1 class="cabecalho__titulo">Favorite Movies</h1>
+    </header>
+
+    <div class="pesquisa">
+        <form class="pesquisa__form">
+            <input type="search" placeholder="Digite o nome do filme..."
+                class="pesquisa__input">
+            <button type="submit" class="pesquisa__input--search"></button>
+        </form>
+        <label for="favoritos" class="pesquisa__filtro">
+            <input type="checkbox" name="favoritos" id="favoritos" class="pesquisa__checkbox" unchecked>
+            Mostrar apenas meus filmes favoritos
+        </label>
+    </div>
+
+    <section class="conteudo__container">
+        <h2 class="categoria">Filmes populares</h2>
+        <div class="conteudo"></div>
+    </section>
+
+    <footer class="rodape">
+        <div></div>
+        <p>Desenvolvido por Eric</p>
+        <div class="rodape__links">
+            <a href="https://www.linkedin.com/in/eric-vieira-palavro/" class="rodape__links--linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/eric-vp" class="rodape__links--github"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+    <script src="https://kit.fontawesome.com/f5a886c6b0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

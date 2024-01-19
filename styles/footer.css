@@ -1,0 +1,42 @@
+.rodape {
+    width: 100%;
+    color: white;
+    padding: .8rem 5rem;
+    background-color: var(--card-color);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.rodape__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.rodape__links--linkedin, .rodape__links--github {
+    color: inherit;
+}
+
+@media screen and (max-width: 700px) {
+    .rodape {
+        height: 100px;
+        flex-direction: column;
+        padding: .8rem 0;
+    }
+
+    .rodape p {
+        text-align: center;
+        width: 80%;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid var(--accent-color);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .rodape {
+        position: relative;
+    }
+}

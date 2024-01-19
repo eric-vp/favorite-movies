@@ -1,0 +1,128 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    /* color: #ff7f11; */
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.cabecalho__icone {
+    color: inherit;
+    font-size: 2.5rem;
+}
+
+.cabecalho__titulo {
+    font-size: 2.5rem;
+    font-family: var(--font-title);
+}
+
+.pesquisa {
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    position: sticky;
+    top: 0;
+    background: var(--main-gradient);
+}
+
+.pesquisa__form {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa__input {
+    color: white;
+    font-weight: 500;
+    background-color: rgb(95, 90, 122);
+    font-size: 1.2rem;
+    display: inline;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    width: 634px;
+}
+
+.pesquisa__input:focus {
+    outline: white solid 1px;
+}
+
+.pesquisa__input--search {
+    background: transparent url('/icons/Search.svg');
+    background-position: center;
+    height: 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+
+    position: relative;
+    left: -50px;
+
+    border: none;
+    cursor: pointer;
+}
+
+.pesquisa__input::placeholder {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pesquisa__filtro {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 2px solid var(--checkbox-color);
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+
+.pesquisa__checkbox::after {
+    content: url('/icons/Check.svg');
+    margin-top: -2px;
+    margin-right: -1px;
+    display: none;
+}
+
+.pesquisa__checkbox:checked {
+    background-color: var(--checkbox-color);
+}
+
+.pesquisa__checkbox:checked::after {
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    .pesquisa__form {
+        border-bottom: 2px solid var(--accent-color);
+    }
+
+    .pesquisa__input {
+        width: 100%;
+        background: none;
+        border-radius: 0;
+    }
+
+    .pesquisa__input:focus {
+        outline: none;
+    }
+
+    .pesquisa__input--search {
+        left: -10px;
+    }
+}

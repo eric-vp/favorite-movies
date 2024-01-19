@@ -1,0 +1,27 @@
+@import url('/styles/header.css');
+@import url('/styles/footer.css');
+@import url('/styles/card.css');
+@import url('/styles/conteudo.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    /* --main-color: #17162E; */
+    --main-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(22, 29, 46, 1) 0%, rgba(55, 95, 125, 1) 100%);
+    --accent-color: #FFB412;
+    --text-color: #acacac;
+    --card-color: #1D1C3B;
+    --checkbox-color: #706EA8;
+    --font-title: 'Bebas Neue',
+        sans-serif;
+}
+
+body {
+    background: var(--main-gradient);
+}
