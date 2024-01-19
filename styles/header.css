@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     color: var(--accent-color);
-    /* color: #ff7f11; */
     gap: 1rem;
     padding-top: 2rem;
 }

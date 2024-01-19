@@ -12,7 +12,6 @@
 }
 
 :root {
-    /* --main-color: #17162E; */
     --main-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(22, 29, 46, 1) 0%, rgba(55, 95, 125, 1) 100%);
     --accent-color: #FFB412;
     --text-color: #acacac;
