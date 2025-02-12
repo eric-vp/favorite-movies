@@ -2,6 +2,8 @@
 
 ## Um *Web App* desenvolvido para pesquisar e salvar seus filmes favoritos
 
+<img src="https://github.com/eric-vp/portfolio/blob/main/src/assets/favorite-movies.png" alt="Favorite Movies">
+
 ### Funcionalidades
 
 - Pesquisa e exibe o *top* 20 de filmes populares do *The Movie Database* ao abrir a página
